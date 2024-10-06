@@ -12,7 +12,8 @@ function Projects() {
     "ComicFix-com/UniW",
     "ComicFix-com/ZoXach",
     "ComicFix-com/Law-Buddy-",
-    "ComicFix-com/Widgets"
+    "ComicFix-com/Widgets",
+    "ComicFix-com/Neighborhoodlively"
   ];
 
   useEffect(() => {
