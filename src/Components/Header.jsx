@@ -4,7 +4,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDonateClick = () => {
-    const gpayLink = "upi://pay?pa=adnanmuhammad4393@okicici&pn=Adnan%20Muhammad&cu=INR&tn=Donation";
+    const gpayLink = "upi://pay?pa=adnanmuhammad4393@okicici&pn=Adnan%20Muhammad&am=500.00&cu=INR&tn=Supporting ComicFix Community";
     window.location.href = gpayLink;
   };
 
