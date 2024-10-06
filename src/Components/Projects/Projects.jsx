@@ -11,7 +11,8 @@ function Projects() {
     "ComicFix-com/FinSage-",
     "ComicFix-com/UniW",
     "ComicFix-com/ZoXach",
-    "ComicFix-com/Law-Buddy-"
+    "ComicFix-com/Law-Buddy-",
+    "ComicFix-com/Widgets"
   ];
 
   useEffect(() => {
