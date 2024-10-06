@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const Projects = () => {
+function Projects() {
   const [repos, setRepos] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
@@ -18,22 +18,16 @@ const Projects = () => {
   useEffect(() => {
     const fetchGitHubRepos = async () => {
       setLoading(true);
-      setError(null); // Reset error state before fetching
+      setError(null); // Reset any previous errors
 
       try {
-        const repoDataPromises = repoList.map((repo) =>
-          fetch(`https://api.github.com/repos/${repo}`)
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error(`Error fetching ${repo}: ${response.statusText}`);
-              }
-              return response.json();
-            })
+        // Fetch all repositories and handle errors for each
+        const reposData = await Promise.all(
+          repoList.map(repo => fetchRepo(repo))
         );
-        const reposData = await Promise.all(repoDataPromises);
         setRepos(reposData);
-      } catch (err) {
-        setError(`Failed to load repositories: ${err.message}`);
+      } catch {
+        setError("Failed to load repositories");
       } finally {
         setLoading(false);
       }
@@ -41,6 +35,15 @@ const Projects = () => {
 
     fetchGitHubRepos();
   }, []);
+
+  const fetchRepo = async (repo) => {
+    const response = await fetch(`https://api.github.com/repos/${repo}`);
+    
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${repo}`);
+    }
+    return response.json();
+  };
 
   if (loading) {
     return <div className="text-white px-10 py-10">Loading...</div>;
@@ -51,8 +54,8 @@ const Projects = () => {
   }
 
   return (
-    <div id="ep" className="px-10 py-10 md:px-20 text-white bg-black">
-      <h1 className="text-3xl mb-8 font-bold">Featured Projects</h1>
+    <div id='ep' className='px-10 py-10 md:px-20 text-white bg-black'>
+      <h1 className='text-3xl mb-8 font-bold'>Featured Projects</h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {repos.map((repo) => (
           <RepoCard key={repo.id} repo={repo} />
@@ -60,22 +63,15 @@ const Projects = () => {
       </div>
     </div>
   );
-};
+}
 
 const RepoCard = ({ repo }) => (
   <div className="bg-opacity-50 backdrop-blur-md rounded-lg shadow-lg overflow-hidden">
     <div className="p-6">
       <h2 className="text-2xl font-bold mb-2 text-white">{repo.name}</h2>
-      <p className="text-gray-400 mb-4 line-clamp-5">
-        {repo.description || "No description available"}
-      </p>
+      <p className="text-gray-400 mb-4 line-clamp-5">{repo.description || "No description available"}</p>
       <RepoStats stargazersCount={repo.stargazers_count} forksCount={repo.forks_count} />
-      <a
-        href={repo.html_url}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-indigo-500 hover:underline mt-4 block"
-      >
+      <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-indigo-500 hover:underline mt-4 block">
         View Project
       </a>
     </div>
