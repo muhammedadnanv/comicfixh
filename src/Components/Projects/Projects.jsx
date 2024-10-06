@@ -12,9 +12,8 @@ function Projects() {
     "ComicFix-com/UniW",
     "ComicFix-com/ZoXach",
     "ComicFix-com/Law-Buddy-",
-    "ComicFix-com/Widgets",
-    "ComicFix-com/Neighborhoodlively",
-    "ComicFix-com/DevVortex-Premium"
+    "ComicFix-com/Widgets"
+    
   ];
 
   useEffect(() => {
