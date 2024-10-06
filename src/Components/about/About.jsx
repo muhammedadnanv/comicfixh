@@ -4,7 +4,7 @@ function About() {
   return (
     <div className='px-10 py-10 md:px-20 text-white bg-black'>
         <h1 className='text-3xl font-bold'>What is ComicFix ?</h1>
-        <p className='mt-4'>ComicFix is a platform dedicated to fostering collaboration and growth in the open-source community. We provide freshers and self-taught developers with the opportunity to work on live, real-world projects, enhancing their skills while making meaningful impacts—all for free. Participants can build their portfolios, earn industry-recognized certifications, and collaborate with a supportive community of peers and mentors. Join us in shaping the future of software development and contributing to impactful open-source projects!</p>
+        <p className='mt-4'>ComicFix is an innovative platform based in Kozhikode, Kerala, designed to empower freshers and self-taught developers by offering the chance to work on live projects and earn industry-recognized certifications completely free of charge. Launched in 2023, ComicFix provides invaluable hands-on experience in a real-world development environment, allowing participants to enhance their skills, build impressive portfolios, and collaborate within a supportive community of peers and mentors. Join us at ComicFix to take your development journey to the next level!</p>
     </div>
   )
 }
