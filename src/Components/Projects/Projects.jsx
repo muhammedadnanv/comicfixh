@@ -15,7 +15,8 @@ function Projects() {
     "ComicFix-com/Widgets",
     "ComicFix-com/DevVortex-Premium",
     "ComicFix-com/Neighborhoodlively",
-    "ComicFix-com/tonx"
+    "ComicFix-com/tonx",
+    "ComicFix-com/mathrangers"
   ];
 
   useEffect(() => {
