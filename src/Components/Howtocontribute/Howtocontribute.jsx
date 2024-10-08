@@ -25,6 +25,7 @@ function HowToContribute() {
           </div>
           <hr />
         </li>
+
         <li>
           <hr />
           <div className="timeline-middle">
@@ -32,7 +33,7 @@ function HowToContribute() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5  text-white">
+              className="h-5 w-5 text-white">
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -46,6 +47,7 @@ function HowToContribute() {
           </div>
           <hr />
         </li>
+
         <li>
           <hr />
           <div className="timeline-middle">
@@ -53,7 +55,7 @@ function HowToContribute() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5  text-white">
+              className="h-5 w-5 text-white">
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -67,6 +69,7 @@ function HowToContribute() {
           </div>
           <hr />
         </li>
+
         <li>
           <hr />
           <div className="timeline-middle">
@@ -74,7 +77,7 @@ function HowToContribute() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5  text-white">
+              className="h-5 w-5 text-white">
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -83,10 +86,12 @@ function HowToContribute() {
           </div>
           <div className="timeline-end mb-10">
             <time className="font-mono italic">Step 4</time>
-            <div className="text-lg font-black ">Submit a Pull Request</div>
+            <div className="text-lg font-black">Submit a Pull Request</div>
             Once you're satisfied with your changes, submit a pull request to the original repository. Be sure to include a clear description of your changes and why they should be merged.
           </div>
+          <hr />
         </li>
+
         <li>
           <hr />
           <div className="timeline-middle">
@@ -94,7 +99,7 @@ function HowToContribute() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5  text-white">
+              className="h-5 w-5 text-white">
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -104,9 +109,11 @@ function HowToContribute() {
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">Step 5</time>
             <div className="text-lg font-black">Send Your Details</div>
-            After submitting the pull request, send an email with the subject "I am contributing to {the project name}" and include your name, phone number, address, LinkedIn ID, GitHub ID, and links to all your tech platforms.
+            After submitting a pull request, email us your details with the subject "I am contributing to {the project name}" and include your name, phone number, address, LinkedIn ID, GitHub ID, and links to all your tech platforms.
           </div>
+          <hr />
         </li>
+
         <li>
           <hr />
           <div className="timeline-middle">
@@ -114,7 +121,7 @@ function HowToContribute() {
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 20 20"
               fill="currentColor"
-              className="h-5 w-5  text-white">
+              className="h-5 w-5 text-white">
               <path
                 fillRule="evenodd"
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z"
@@ -123,8 +130,8 @@ function HowToContribute() {
           </div>
           <div className="timeline-end mb-10">
             <time className="font-mono italic">Step 6</time>
-            <div className="text-lg font-black">Update LinkedIn Experience</div>
-            Finally, add this contribution to your experience section on LinkedIn, mentioning the project and the role you played.
+            <div className="text-lg font-black">Add Us to Your LinkedIn</div>
+            Finally, add the project or our team as part of your experience section on LinkedIn to showcase your contributions.
           </div>
         </li>
       </ul>
@@ -133,3 +140,4 @@ function HowToContribute() {
 }
 
 export default HowToContribute;
+
