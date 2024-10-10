@@ -4,6 +4,7 @@ import About from '../Components/about/About'
 import Projects from '../Components/Projects/Projects'
 import Oursocials from '../Components/OurSocials/Oursocials'
 import Howtocontribute from '../Components/Howtocontribute/Howtocontribute'
+import SpotifyWidget from '../Components/SpotifyWidget/SpotifyWidget'
 
 function Home() {
   return (
@@ -12,7 +13,9 @@ function Home() {
         <About/>
         <Projects/>
         <Howtocontribute/>
+      <SpotifyWidget/>
         <Oursocials/>
+      
     </div>
   )
 }
