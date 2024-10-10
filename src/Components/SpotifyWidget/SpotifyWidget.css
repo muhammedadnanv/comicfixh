@@ -2,7 +2,6 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +14,6 @@ body {
     right: 20px;
     width: 60px;
     height: 60px;
-    background-color: #1DB954; /* Spotify green */
     border-radius: 50%;
     display: flex;
     justify-content: center;
