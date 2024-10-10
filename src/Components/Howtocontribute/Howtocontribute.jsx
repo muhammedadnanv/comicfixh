@@ -108,8 +108,8 @@ function HowToContribute() {
           </div>
           <div className="timeline-start mb-10 md:text-end">
             <time className="font-mono italic">Step 5</time>
-            <div className="text-lg font-black">Send Your Details</div>
-            After submitting a pull request, email us your details with the subject "I am contributing to {the project name}" and include your name, phone number, address, LinkedIn ID, GitHub ID, and links to all your tech platforms.
+            <div className="text-lg font-black">Connect with Us</div>
+            After submitting a pull request, share your contact details with us via email, including your phone number, LinkedIn ID, GitHub ID, and address.
           </div>
           <hr />
         </li>
@@ -130,8 +130,8 @@ function HowToContribute() {
           </div>
           <div className="timeline-end mb-10">
             <time className="font-mono italic">Step 6</time>
-            <div className="text-lg font-black">Add Us to Your LinkedIn</div>
-            Finally, add the project or our team as part of your experience section on LinkedIn to showcase your contributions.
+            <div className="text-lg font-black">Showcase Your Contribution</div>
+            Add the project or our team to your LinkedIn experience section to highlight your contribution and let's expand our professional networks together.
           </div>
         </li>
       </ul>
@@ -140,4 +140,3 @@ function HowToContribute() {
 }
 
 export default HowToContribute;
-

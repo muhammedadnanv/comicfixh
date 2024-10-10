@@ -13,7 +13,7 @@ function Home() {
         <About/>
         <Projects/>
         <Howtocontribute/>
-      <SpotifyWidget/>
+        <SpotifyWidget/>
         <Oursocials/>
       
     </div>

@@ -8,10 +8,10 @@ function Projects() {
   const repoList = [
     "ComicFix-com/Corn.ai",
     "ComicFix-com/AI-tools-for-you",
-    "ComicFix-com/FinSage-",
+    "ComicFix-com/FinSage",
     "ComicFix-com/UniW",
     "ComicFix-com/ZoXach",
-    "ComicFix-com/Law-Buddy-",
+    "ComicFix-com/Law-Buddy",
     "ComicFix-com/Widgets",
     "ComicFix-com/DevVortex-Premium",
     "ComicFix-com/Neighborhoodlively",
@@ -19,18 +19,25 @@ function Projects() {
     "ComicFix-com/mathrangers"
   ];
 
+  const fetchRepo = async (repo) => {
+    const response = await fetch(`https://api.github.com/repos/${repo}`);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch ${repo}`);
+    }
+    return response.json();
+  };
+
   useEffect(() => {
     const fetchGitHubRepos = async () => {
       setLoading(true);
-      setError(null); // Reset any previous errors
+      setError(null);
 
       try {
-        // Fetch all repositories and handle errors for each
         const reposData = await Promise.all(
           repoList.map(repo => fetchRepo(repo))
         );
         setRepos(reposData);
-      } catch {
+      } catch (err) {
         setError("Failed to load repositories");
       } finally {
         setLoading(false);
@@ -40,21 +47,12 @@ function Projects() {
     fetchGitHubRepos();
   }, []);
 
-  const fetchRepo = async (repo) => {
-    const response = await fetch(`https://api.github.com/repos/${repo}`);
-    
-    if (!response.ok) {
-      throw new Error(`Failed to fetch ${repo}`);
-    }
-    return response.json();
-  };
-
   if (loading) {
     return <div className="text-white px-10 py-10">Loading...</div>;
   }
 
   if (error) {
-    return <div className="text-white px-10 py-10">{error}</div>;
+    return <div className="text-white px-10 py-10 bg-black">{error}</div>;
   }
 
   return (

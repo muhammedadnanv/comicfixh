@@ -12,7 +12,7 @@ const SpotifyWidget = () => {
     return (
         <div>
             {/* Spotify Icon Button */}
-            <div className="spotify-button" onClick={toggleSpotifyWidget}>
+            <div className="spotify-button " onClick={toggleSpotifyWidget}>
                 <img
                     src="https://upload.wikimedia.org/wikipedia/commons/1/19/Spotify_logo_without_text.svg"
                     alt="Spotify Icon"
