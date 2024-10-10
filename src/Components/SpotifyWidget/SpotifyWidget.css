@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+
+.spotify-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #1DB954; /* Spotify green */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: box-shadow 0.3s ease;
+}
+
+.spotify-button:hover {
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.spotify-button img {
+    width: 35px;
+    height: 35px;
+}
+
+/* Style for the Spotify widget */
+.spotify-widget {
+    position: fixed;
+    right: 20px;
+    bottom: 100px; /* Adjust the position of the widget */
+    width: 300px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+iframe {
+    border-radius: 12px;
+    width: 100%;
+    height: 152px;
+    border: none;
+}
+
+@media (max-width: 600px) {
+    .spotify-widget {
+        width: 90%;
+        right: 5%;
+    }
+}
