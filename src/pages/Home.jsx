@@ -5,7 +5,7 @@ import Projects from '../Components/Projects/Projects'
 import Oursocials from '../Components/OurSocials/Oursocials'
 import Howtocontribute from '../Components/Howtocontribute/Howtocontribute'
 import SpotifyWidget from '../Components/SpotifyWidget/SpotifyWidget'
-
+import joinasmentor from '../Components/joinasmentor/joinasmentor'
 function Home() {
   return (
     <div className=''>
@@ -13,8 +13,10 @@ function Home() {
         <About/>
         <Projects/>
         <Howtocontribute/>
+       <joinasmentor/>
         <SpotifyWidget/>
         <Oursocials/>
+     
       
     </div>
   )
