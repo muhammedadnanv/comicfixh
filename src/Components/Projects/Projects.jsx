@@ -15,7 +15,8 @@ function Projects() {
   "ComicFix-com/DevVortex-Premium",
   "ComicFix-com/Neighborhoodlively",
   "ComicFix-com/tonx",
-  "ComicFix-com/mathrangers"
+  "ComicFix-com/mathrangers",
+  "ComicFix-com/Foxeor"
 ]
 
 
