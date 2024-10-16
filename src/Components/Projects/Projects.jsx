@@ -18,7 +18,9 @@ function Projects() {
   "ComicFix-com/mathrangers",
   "ComicFix-com/Foxeor",
   "ComicFix-com/FixPay",
-  "ComicFix-com/Law-Buddy-"
+  "ComicFix-com/Law-Buddy-",
+    "ComicFix-com/Awesome-GPT-43"
+
 ]
 
 
