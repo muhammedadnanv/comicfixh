@@ -16,7 +16,9 @@ function Projects() {
   "ComicFix-com/Neighborhoodlively",
   "ComicFix-com/tonx",
   "ComicFix-com/mathrangers",
-  "ComicFix-com/Foxeor"
+  "ComicFix-com/Foxeor",
+  "ComicFix-com/FixPay",
+  "ComicFix-com/Law-Buddy-"
 ]
 
 
