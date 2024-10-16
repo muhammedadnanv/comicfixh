@@ -19,7 +19,8 @@ function Projects() {
   "ComicFix-com/Foxeor",
   "ComicFix-com/FixPay",
   "ComicFix-com/Law-Buddy-",
-    "ComicFix-com/Awesome-GPT-43"
+    "ComicFix-com/Awesome-GPT-43",
+    "ComicFix.com/AI-Toolkit-Explorer"
 
 ]
 
