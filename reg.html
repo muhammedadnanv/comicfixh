@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Engineering Masterclass Registration</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Register for the Prompt Engineering Masterclass</h2>
+        <div class="form-container">
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="linkedin">LinkedIn Profile:</label>
+                    <input type="url" class="form-control" id="linkedin" required>
+                </div>
+                <div class="form-group">
+                    <label for="github">GitHub Profile:</label>
+                    <input type="url" class="form-control" id="github" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email ID:</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="location">Location:</label>
+                    <input type="text" class="form-control" id="location" required>
+                </div>
+                <div class="form-group">
+                    <label for="donation">Small Donation (₹29):</label>
+                    <input type="text" class="form-control" value="29" readonly>
+                </div>
+                <button type="button" class="btn btn-primary" onclick="donate()">Donate via UPI</button>
+                <button type="submit" class="btn btn-success">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function donate() {
+            const upiId = "adnanmuhammad4393@okicici";
+            const amount = 29;
+            const message = "Donation for Prompt Engineering Masterclass";
+
+            // Open UPI app with the donation details
+            window.location.href = `upi://pay?pa=${upiId}&pn=Adnan Muhammad&mc=1234&tid=1234567890&am=${amount}&cu=INR&tn=${message}`;
+        }
+
+        document.getElementById("registrationForm").onsubmit = function(e) {
+            e.preventDefault(); // Prevent form submission for demo
+            alert("Registration submitted!"); // Replace with actual form submission logic
+            // Implement your form submission logic here (e.g., send data to a server)
+        };
+    </script>
+</body>
+</html>
