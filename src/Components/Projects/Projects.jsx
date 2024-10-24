@@ -20,7 +20,9 @@ function Projects() {
   "ComicFix-com/FixPay",
   "ComicFix-com/Law-Buddy-",
     "ComicFix-com/Awesome-GPT-43",
-    "ComicFix.com/AI-Toolkit-Explorer"
+    "ComicFix.com/AI-Toolkit-Explorer",
+    "ComicFix-com/VolunteerConnectHub",
+    "ComicFix-com/Study-Planner"
 
 ]
 
