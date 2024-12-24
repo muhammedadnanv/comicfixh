@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   const handleSupportUsClick = () => {
-    const gpayLink = "https://comicfixsupportspark.vercel.app/";
+    const gpayLink = "https://rzp.io/rzp/gTma9kxC";
     window.location.href = gpayLink;
   };
 
