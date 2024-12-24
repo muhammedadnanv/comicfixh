@@ -4,7 +4,7 @@ function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleDonateClick = () => {
-    const gpayLink = "https://comicfixsupportspark.vercel.app/";
+    const gpayLink = "https://rzp.io/rzp/gTma9kxC";
     window.location.href = gpayLink;
   };
 
